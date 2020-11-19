@@ -1,5 +1,5 @@
 {
-    "name": "ramsey/uuid-doctrine",
+    "name": "brandoriented/uuid-doctrine",
     "type": "library",
     "description": "Allow the use of ramsey/uuid as a Doctrine field type.",
     "keywords": [
@@ -12,15 +12,13 @@
     "homepage": "https://github.com/ramsey/uuid-doctrine",
     "license": "MIT",
     "require": {
-        "php": "^5.4 | ^7 | ^8",
-        "doctrine/orm": "^2.5",
-        "ramsey/uuid": "^3.5 | ^4"
+        "php": "^7.4 | ^8",
+        "doctrine/orm": "^2",
+        "doctrine/dbal": "^2.5 | ^3.0",
+        "ramsey/uuid": "^4"
     },
-    "require-dev": {
-        "jakub-onderka/php-parallel-lint": "^1",
-        "mockery/mockery": "^0.9.11 | ^1",
-        "phpunit/phpunit": "^4.8.36 | ^5.7 | ^6.5 | ^7",
-        "squizlabs/php_codesniffer": "^3.5"
+    "replace": {
+        "ramsey/uuid-doctrine":"*"
     },
     "config": {
         "sort-packages": true
